@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>Leon Okun Studio</title>
+
+	<link rel="stylesheet" href="styles/art.min.css" />
+	<link rel="stylesheet" href="styles/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+	<!--load your custom styles here-->
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<script src="scripts/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			$('[data-role="header"], [data-role="footer"]').toolbar();
+		}); //close doc ready
+	</script>
+
+</head>
+
+<body>
+	<header data-role="header" data-position="fixed" data-theme="b">
+		<h1>Leon Okun Studio</h1>
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#firstPage" class="ui-btn ui-icon-home ui-btn-icon-top ui-state-persist">Home</a></li>
+				<li><a href="#secondPage" class="ui-btn ui-icon-calendar ui-btn-icon-top ui-state-persist">Classes</a></li>
+				<li><a href="#thirdPage" class="ui-btn ui-icon-phone ui-btn-icon-top ui-state-persist">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- home page -->
+	<section id="firstPage" data-role="page">
+		<article data-role="main" class="ui-content">
+			<h2>About studio</h2>
+			<img src="images/leon.gif" alt="">
+			<p>Leon Okun’s studio is a unique environment where one can learn traditional European academic methods of painting and drawing. The studio is composed of two instructors: Leon Okunand Varvara Agabekova.
+				<p>Both Leon and Varvara are graduate of St. Petersburg Academy of Fine Arts in Russia. Leon and Varvara have different approaches to painting and teaching, which allows students to try different approaches to painting.</p>
+				<p> Both styles represent the 260 year old tradition of St. Petersburg Academy of Fine Arts. Leon and Varvara are both working artists, which serves as a source of example and inspiration to the students. Leon and Varvara are the only representatives of traditional European academic painting in southern California.</p>
+				<h2>What we do and how we do it:</h2>
+				<p>We work from life, portrait, still life, and plein air. We start from simple assignments and advance to multi figured compositions.</p>
+				<ul>
+					<li>Why choose this studio?</li>
+					<li>Patient teachers who have a lot of experience working with beginning students.</li>
+					<li>In-class demonstrations</li>
+					<li>Dedicated and friendly body of students!</li>
+					<li>You will be proud to put your work in an art show or a gallery.</li>
+				</ul>
+
+				<p>Testimonials :</p>
+
+				<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h1>Jennifer H</h1>
+						<p>Highly recommend this studio.</p>
+					</div>
+					<!-- collapsible 1 -->
+					<div data-role="collapsible">
+						<h1>Lillian</h1>
+						<p>Lovely teachers and classes!</p>
+					</div>
+					<div data-role="collapsible">
+						<h1>Ornela J</h1>
+						<p>Dedicated teachers and lovely classes</p>
+					</div>
+
+				</div>
+				<!-- close collapsible set -->
+				<div class="ui-field-contain">
+					<label for="search">Search</label>
+					<input type="search" name="search" id="search" value="" placeholder="search this site">
+				</div>
+		</article>
+	</section>
+	<!-- end home page -->
+
+	<!-- 2nd page -->
+	<section id="secondPage" data-role="page">
+		<article data-role="main" class="ui-content">
+			<h2>Looking forward seeing you in the class!</h2>
+
+			<ul data-role="listview">
+				<li><a href="#drawing">Drawing</a></li>
+				<li><a href="#plein">Plein Air Classes</a></li>
+				<li><a href="#portrait">Portrait Class</a></li>
+			</ul>
+
+		</article>
+	</section>
+	<!-- close 2nd page -->
+	<!-- drawing -->
+	<section id="drawing" data-role="page" data-dialog="true" data-close-btn="right">
+		<header data-role="header">
+			<h1>Drawing</h1>
+		</header>
+		<article data-role="main" class="ui-content">
+
+			<p>Private and Semi-Private classes available up on request, $30 per hour for individual class, $25 for a group of more than two students. For more information please contact us. Drawing is probably the most fundamental discipline if art education. Drawing education consist of several subjects that should be studied: Light logic and basic perspective, cast drawing, portrait drawing from life or photo reference.</p>
+			<p>Get back <a href="#secondPage">Other classes</a></p>
+		</article>
+
+	</section>
+	<!-- close drawing -->
+	<!-- plein -->
+	<section id="plein" data-role="page" data-dialog="true" data-close-btn="right">
+		<header data-role="header">
+			<h1>Plein Air Classes</h1>
+		</header>
+		<article data-role="main" class="ui-content">
+
+			<p>Oil on Canvas, this class will be outdoors! $25 per hour, for schedule please refer to the calendar. Plein Air is a French term that means “in the open air” referring to painting outdoors. Plein air became especially popular with impressionists, who rediscovered landscape painting and perfected color theory. Like impressions we will leave our dark studios with artificial light and brown color pallets and paint outdoors! To discover color harmonies of sunrise, afternoon, ocean scenes, estuaries, mountains, and San Diego urban life. Experience the difference in light between summer, fall and winter. Plein air class is a great way to learn composition, color harmony, drawing as well as get to know San Diego from an artist point of view!</p>
+			<p>Get back <a href="#secondPage">Other classes</a></p>
+		</article>
+
+	</section>
+	<!-- close plein -->
+	<!-- Portrait Class -->
+	<section id="portrait" data-role="page" data-dialog="true" data-close-btn="right">
+		<header data-role="header">
+			<h1>Portrait Class</h1>
+		</header>
+		<article data-role="main" class="ui-content">
+
+			<p>We will work from life model, $25 per hour for a class more than three students, $50 per hour for individual lessons. Class available up on request, for dates please refer to the schedule. Portrait Painting from life model is a very challenging class, but it is difficult to find something more exiting! Trying to catch the likeness of the sitter, we will explore composition, drawing and color harmonies. We will talk about how to start working from big planes and generalization to smaller form, down to the smallest details. We will have live model pose for us at least six hours to complete our study..</p>
+			<p>Get back <a href="#secondPage">Other classes</a></p>
+		</article>
+
+	</section>
+	<!-- close Portrait Class -->
+
+	<!-- 3d page -->
+	<section id="thirdPage" data-role="page">
+		<article data-role="main" class="ui-content">
+			<form action="" method="get">
+				<fieldset class="ui-field-contain">
+					<label for="text-1">Name:</label>
+					<input type="text" name="text-1" id="text-1" value="">
+					<label for="email">Your Email:</label>
+					<input type="email" name="email" id="email" value="" placeholder="Your Email" />
+
+					<label for="details">Comments:</label>
+					<textarea name="details" id="details"></textarea>
+					<label for="speed">Choose Your Class </label>
+					<select name="speed" id="speed">
+						<option>Drawing Class</option>
+						<option>Plein Air Class</option>
+
+						<option>Portrait Class</option>
+
+					</select>
+
+				</fieldset>
+
+				<div class="ui-field-contain">
+					<label for="fs1">Would you like to receive our newsletter?:</label>
+					<select name="fs1" id="fs1" data-role="flipswitch">
+						<option value="no" selected="selected">No</option>
+						<option value="yes">Yes</option>
+					</select>
+				</div>
+
+
+				<div class="ui-field-contain">
+					<button type="submit" id="submit" value="Submit">Submit</button>
+				</div>
+			</form>
+		</article>
+
+	</section>
+	<!-- close 3d page -->
+
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<h3>&copy;2019 - Leon Okun Studio</h3>
+	</footer>
+</body>
+
+</html>
